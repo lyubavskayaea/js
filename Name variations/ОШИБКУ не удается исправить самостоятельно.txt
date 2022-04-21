@@ -1,0 +1,34 @@
+
+
+
+
+
+При запуске не отображаются значения, если написано верно. 
+Enter your name
+
+Екатерина Любавская
+Variation	Result
+Number of characters	19
+Lower case	function toLowerCase() { [native code] }
+Upper case	function toUpperCase() { [native code] }
+
+также выдает ошибку в консоли
+
+
+(node:15712) Warning: To load an ES module, set "type": "module" in the package.json or use the .mjs extension.
+(Use `node --trace-warnings ...` to show where the warning was created)
+C:\Users\doxla\OneDrive\Рабочий стол\applications\Name variations\js\index.js:3
+import {getNumberOfChars, getLower, getUpper} from "../js/helpers.js";
+^^^^^^
+
+SyntaxError: Cannot use import statement outside a module
+    at Object.compileFunction (node:vm:352:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1032:15)
+    at Module._compile (node:internal/modules/cjs/loader:1067:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)
+    at node:internal/main/run_main_module:17:47
+
+исправить самостоятельно не получилось
