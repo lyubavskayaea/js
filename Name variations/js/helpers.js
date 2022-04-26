@@ -6,11 +6,14 @@ export function getNumberOfChars(name) {
   
   /** @param {string} name */
   export function getLower(name) {
-    return name.toLowerCase
+    return name.toLowerCase()
   };
   
   /** @param {string} name */
   export function getUpper(name) {
-    return name.toUpperCase
+    return name.toUpperCase()
   };
 
+  console.log(getNumberOfChars("alex"));
+  console.log(getUpper("alex"))
+  console.log(getLower("JoHNnY"))
