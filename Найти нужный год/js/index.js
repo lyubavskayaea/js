@@ -3,7 +3,9 @@
  * @param {number} searchYear
  */
  const getYear = (years, searchYear) => {
-	return years.includes(searchYear, 0)
+	if (years.includes(searchYear, 0)) 
+	return searchYear
+	
 }
 
 
