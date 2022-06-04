@@ -2,8 +2,8 @@
  * @param {string} name
  */
  const getSlug = name => {
-	 return name.replaceAll(" ", "-").toLowerCase();
-	// your code
+	 return name.replaceAll(" ", "-").toLowerCase().substring(0, 14);
+
 }
 
 // Sample usage - do not modify
