@@ -4,8 +4,10 @@
  * @param {boolean} users.isVerified
  */
  const exportVerifiedUsers = users => {
-   console.log(users);
-    //не работает, где-то туплю   
+    let name = []
+    users.forEach(user => {
+    user.isVerified ? name.push(`${user.name}`) : ""})
+    return name.join(", "); 
     }
 
 
