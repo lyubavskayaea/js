@@ -10,12 +10,13 @@
 	//groups.isPublic.every(groups.isPublic => isPublic === true)
   //groups.every(group => group.details.isPublic === true);
   //const group = groups?.details?.isPublic === true
-  if ( groups &&  groups.details && groups.isPublic){
+ /*  if ( groups &&  groups.details && groups.isPublic){
     return groups.isPublic === true;
   } else {
     return false;
-  }
+  } */
 // скорее не работает
+return groups.every(group => group.details?.isPublic)
 }
 
 // Sample usage - do not modify
