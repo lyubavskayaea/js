@@ -14,6 +14,11 @@
   }  */
   //return users.subscription?.info?.value ?? 0;
   //не работает, где-то туплю
+  let sum = 0;
+  users.forEach(users => {
+    sum = sum + (users.subscription?.info?.value ?? 0);
+  })
+  return sum
 }
 
 // Sample usage - do not modify
