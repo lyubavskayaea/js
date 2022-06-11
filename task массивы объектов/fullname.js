@@ -2,9 +2,9 @@
  * @param {Object[]} users
  */
  const getFullNames = users => {
-	const {firstName, lastName} = users;
-  return `${users[firstName]} ${users[lastName]}`;
-  // не работает
+	return users.map(function(users) {
+    return `${users.firstName} ${users.lastName}`;
+  }) 
 }
 
 // Sample usage - do not modify
